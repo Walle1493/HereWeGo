@@ -14,7 +14,7 @@ func main() {
 		fmt.Println("any is not nil")
 	}
 	/*
-		// to get the inner value:
+		// to get the src value:
 		anything := any.(*Anything)
 		if anything == nil {
 			fmt.Println("anything is nil")
@@ -41,6 +41,6 @@ the interface value any is storing a value, so it is not nil.
 It just so happens that the particular value it is storing is a nil pointer.
 The any variable has a type, so it's not a nil interface,
 rather an interface variable with type Any and concrete value (*Anything)(nil).
-To get the inner value of any, use: anything := any.(*Anything)
+To get the src value of any, use: anything := any.(*Anything)
 now anything contains nil !
 */

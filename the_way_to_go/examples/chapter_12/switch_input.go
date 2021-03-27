@@ -26,7 +26,7 @@ func main() {
 	case "Ivo\r\n":
 		fmt.Println("Welcome Ivo!")
 	default:
-		fmt.Printf("You are not welcome here! Goodbye!")
+		fmt.Printf("You are not welcome here! Goodbye!\n")
 	}
 
 	// version 2:
@@ -36,7 +36,7 @@ func main() {
 	case "Ivo\r\n":
 		fallthrough
 	case "Chris\r\n":
-		fmt.Printf("Welcome %s\n", input)
+		fmt.Printf("Welcome %s", input)
 	default:
 		fmt.Printf("You are not welcome here! Goodbye!\n")
 	}
@@ -44,7 +44,7 @@ func main() {
 	// version 3:
 	switch input {
 	case "Philip\r\n", "Ivo\r\n":
-		fmt.Printf("Welcome %s\n", input)
+		fmt.Printf("Welcome %s", input)
 	default:
 		fmt.Printf("You are not welcome here! Goodbye!\n")
 	}
